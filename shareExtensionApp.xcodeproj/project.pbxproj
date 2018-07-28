@@ -12,7 +12,34 @@
 		2917A0B1210C3F03000A0BAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2917A0AF210C3F03000A0BAE /* Main.storyboard */; };
 		2917A0B3210C3F03000A0BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2917A0B2210C3F03000A0BAE /* Assets.xcassets */; };
 		2917A0B6210C3F03000A0BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2917A0B4210C3F03000A0BAE /* LaunchScreen.storyboard */; };
+		2917A0C4210C3FED000A0BAE /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917A0C3210C3FED000A0BAE /* ShareViewController.swift */; };
+		2917A0C7210C3FED000A0BAE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2917A0C5210C3FED000A0BAE /* MainInterface.storyboard */; };
+		2917A0CB210C3FED000A0BAE /* sharePhoto.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2917A0C1210C3FED000A0BAE /* sharePhoto.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2917A0C9210C3FED000A0BAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2917A0A0210C3F03000A0BAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2917A0C0210C3FED000A0BAE;
+			remoteInfo = sharePhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2917A0CF210C3FED000A0BAE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2917A0CB210C3FED000A0BAE /* sharePhoto.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2917A0A8210C3F03000A0BAE /* shareExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,23 @@
 		2917A0B2210C3F03000A0BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2917A0B5210C3F03000A0BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2917A0B7210C3F03000A0BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2917A0C1210C3FED000A0BAE /* sharePhoto.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = sharePhoto.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2917A0C3210C3FED000A0BAE /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		2917A0C6210C3FED000A0BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2917A0C8210C3FED000A0BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2917A0D0210C4023000A0BAE /* sharePhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sharePhoto.entitlements; sourceTree = "<group>"; };
+		2917A0D1210C405F000A0BAE /* shareExtensionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shareExtensionApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2917A0A5210C3F03000A0BAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2917A0BE210C3FED000A0BAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				2917A0AA210C3F03000A0BAE /* shareExtensionApp */,
+				2917A0C2210C3FED000A0BAE /* sharePhoto */,
 				2917A0A9210C3F03000A0BAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2917A0A8210C3F03000A0BAE /* shareExtensionApp.app */,
+				2917A0C1210C3FED000A0BAE /* sharePhoto.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +96,7 @@
 		2917A0AA210C3F03000A0BAE /* shareExtensionApp */ = {
 			isa = PBXGroup;
 			children = (
+				2917A0D1210C405F000A0BAE /* shareExtensionApp.entitlements */,
 				2917A0AB210C3F03000A0BAE /* AppDelegate.swift */,
 				2917A0AD210C3F03000A0BAE /* ViewController.swift */,
 				2917A0AF210C3F03000A0BAE /* Main.storyboard */,
@@ -62,6 +105,17 @@
 				2917A0B7210C3F03000A0BAE /* Info.plist */,
 			);
 			path = shareExtensionApp;
+			sourceTree = "<group>";
+		};
+		2917A0C2210C3FED000A0BAE /* sharePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2917A0D0210C4023000A0BAE /* sharePhoto.entitlements */,
+				2917A0C3210C3FED000A0BAE /* ShareViewController.swift */,
+				2917A0C5210C3FED000A0BAE /* MainInterface.storyboard */,
+				2917A0C8210C3FED000A0BAE /* Info.plist */,
+			);
+			path = sharePhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +128,34 @@
 				2917A0A4210C3F03000A0BAE /* Sources */,
 				2917A0A5210C3F03000A0BAE /* Frameworks */,
 				2917A0A6210C3F03000A0BAE /* Resources */,
+				2917A0CF210C3FED000A0BAE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2917A0CA210C3FED000A0BAE /* PBXTargetDependency */,
 			);
 			name = shareExtensionApp;
 			productName = shareExtensionApp;
 			productReference = 2917A0A8210C3F03000A0BAE /* shareExtensionApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2917A0C0210C3FED000A0BAE /* sharePhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2917A0CC210C3FED000A0BAE /* Build configuration list for PBXNativeTarget "sharePhoto" */;
+			buildPhases = (
+				2917A0BD210C3FED000A0BAE /* Sources */,
+				2917A0BE210C3FED000A0BAE /* Frameworks */,
+				2917A0BF210C3FED000A0BAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sharePhoto;
+			productName = sharePhoto;
+			productReference = 2917A0C1210C3FED000A0BAE /* sharePhoto.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +170,20 @@
 					2917A0A7210C3F03000A0BAE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					2917A0C0210C3FED000A0BAE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				2917A0A7210C3F03000A0BAE /* shareExtensionApp */,
+				2917A0C0210C3FED000A0BAE /* sharePhoto */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +217,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2917A0BF210C3FED000A0BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2917A0C7210C3FED000A0BAE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2917A0BD210C3FED000A0BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2917A0C4210C3FED000A0BAE /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2917A0CA210C3FED000A0BAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2917A0C0210C3FED000A0BAE /* sharePhoto */;
+			targetProxy = 2917A0C9210C3FED000A0BAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2917A0AF210C3F03000A0BAE /* Main.storyboard */ = {
@@ -158,6 +270,14 @@
 				2917A0B5210C3F03000A0BAE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2917A0C5210C3FED000A0BAE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2917A0C6210C3FED000A0BAE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,7 +393,9 @@
 		2917A0BB210C3F03000A0BAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shareExtensionApp/shareExtensionApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z22J6GHD9J;
 				INFOPLIST_FILE = shareExtensionApp/Info.plist;
@@ -288,13 +410,47 @@
 		2917A0BC210C3F03000A0BAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = shareExtensionApp/shareExtensionApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z22J6GHD9J;
 				INFOPLIST_FILE = shareExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shareExtensionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2917A0CD210C3FED000A0BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = sharePhoto/sharePhoto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z22J6GHD9J;
+				INFOPLIST_FILE = sharePhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareExtensionApp.sharePhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2917A0CE210C3FED000A0BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = sharePhoto/sharePhoto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z22J6GHD9J;
+				INFOPLIST_FILE = sharePhoto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareExtensionApp.sharePhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +473,15 @@
 			buildConfigurations = (
 				2917A0BB210C3F03000A0BAE /* Debug */,
 				2917A0BC210C3F03000A0BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2917A0CC210C3FED000A0BAE /* Build configuration list for PBXNativeTarget "sharePhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2917A0CD210C3FED000A0BAE /* Debug */,
+				2917A0CE210C3FED000A0BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
